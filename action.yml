@@ -1,0 +1,17 @@
+name: 'Добавление комментария'
+description: 'Добавляет в тикет в Yandex Tracker'
+inputs:
+  token:
+    description: 'токен трекера'
+    required: true
+  x-org-id:
+    description: 'id организации'
+    required: true
+  ticket-id:
+    description: 'id тикета'
+    required: true
+  comment:
+    description: 'комментарий'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
